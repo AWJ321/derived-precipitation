@@ -1,0 +1,23 @@
+# Core dependencies -- always required
+xarray>=2023.1.0
+numpy>=1.23
+pandas>=1.5
+scipy>=1.9
+metpy>=1.4
+netCDF4>=1.6
+
+# Only needed if ENGINE="cfgrib" in your CONFIG
+cfgrib>=0.9.10
+
+# Only needed if MODEL_TYPE="mlp" in your CONFIG
+torch>=2.0
+
+# Only needed if MODEL_TYPE="lgbm" in your CONFIG
+lightgbm>=3.3
+
+# Only needed if ENGINE="zarr" in your CONFIG
+# zarr>=2.14
+
+# Only needed if ENGINE="h5netcdf" in your CONFIG
+# h5netcdf>=1.1
+pyarrow>=10.0
